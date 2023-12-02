@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { 
+                margin: 0;  
+                display: flex;
+                flex-direction: row;
+            }
+            .control{
+                flex: 1;
+                background-color: lightgray;
+            }
+            #listColors{
+                width : auto;
+                height: auto;
+                margin-top: 10px;
+                margin-left: 100px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            #listColors > img {
+                border-radius: 50%;
+                margin: 10px;
+                width : 50px;
+                height : 50px;
+            }
+		</style>
+	</head>
+	<body style="background-color: rgb(171, 196, 194);">
+		<script type="module" src="/main.js"></script>
+        <div class="webgl"></div>
+        <div class="control">
+            <br/>
+            <div>
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                  <option value="lowback">Low Back</option>
+                  <option value="highback">High Back</option>
+                </select>
+            </div>
+            <br/>
+            <fieldset>
+                <legend>Seat:</legend>
+                <div>
+                    <label for="material">Material:</label>
+                    <select name="material" id="material">
+                      <option value="plano">Plano</option>
+                      <option value="laser">Laser</option>
+                      <option value="cosy">Cosy</option>
+                      <option value="credo">Credo</option>
+                    </select>
+                </div>
+                <div id="listColors"></div>
+            </fieldset>
+
+
+            <!-- <div>
+                <label for="favcolor">Seat color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </div> -->
+
+        </div>
+	</body>
+</html>
