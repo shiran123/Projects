@@ -1,0 +1,41 @@
+.App {
+  margin: 0;
+}
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.loginForm .title{
+  color:blue;
+}
+
+.loginForm .login{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+}
+
+.loginForm .login .inputarea{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+}
+
+.postArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postArea h2{
+  color: chocolate;
+}
